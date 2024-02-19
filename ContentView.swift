@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    let solutions: [Question] = [.MergeTwoArrays]
+    let solutions: [Question] = Question.allCases
     var body: some View {
         VStack {
             List {

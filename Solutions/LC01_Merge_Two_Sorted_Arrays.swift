@@ -8,6 +8,7 @@
 import Foundation
 
 class Merge_Two_Sorted_Arrays_Solution {
+    /// 从nums1最后的位置向前
     func merge(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], _ n: Int) {
         var indexOne = m - 1
         var indexTwo = n - 1

@@ -8,6 +8,7 @@
 import Foundation
 
 class Remove_Elements {
+    /// 使用双向指针
     func removeElement(_ nums: inout [Int], _ val: Int) -> Int {
         guard !nums.isEmpty else { return 0 }
         var last = nums.count - 1
