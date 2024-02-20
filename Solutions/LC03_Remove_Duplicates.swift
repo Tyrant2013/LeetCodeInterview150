@@ -8,7 +8,8 @@
 import Foundation
 
 class RemoveDuplicates {
-    /// 使用快慢指针
+    /// 1、使用快慢指针
+    /// 2、使用LC04_Remove_Duplicates_2文件里的RemoveDuplicates2.process(&nums, 1)
     func removeDuplicates(_ nums: inout [Int]) -> Int {
         guard !nums.isEmpty else { return 0 }
         var k: Int = 0
