@@ -24,4 +24,16 @@ class Remove_Elements {
         }
         return hasReplace ? last : last + 1
     }
+    
+    func removeElement2(_ nums: inout [Int], _ val: Int) -> Int {
+        guard !nums.isEmpty else { return 0 }
+        var u: Int = 0
+        for num in nums {
+            if num != val {
+                nums[u] = num
+                u += 1
+            }
+        }
+        return u
+    }
 }
