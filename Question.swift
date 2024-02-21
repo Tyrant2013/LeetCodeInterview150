@@ -14,6 +14,7 @@ enum Question: Identifiable, CaseIterable {
     case RemoveDuplicates
     case RemoveDuplicates2
     case MagorityElement
+    case Rotate
 }
 
 extension URL {
@@ -33,6 +34,7 @@ extension Question {
         case .RemoveDuplicates: return "remove-duplicates-from-sorted-array"
         case .RemoveDuplicates2: return "remove-duplicates-from-sorted-array-ii"
         case .MagorityElement: return "majority-element"
+        case .Rotate: return "rotate-array"
         }
     }
     var link: URL { .urlWithQuestion(question: self) }
@@ -46,6 +48,7 @@ extension Question {
         case .RemoveDuplicates: return "删除有序数组中的重复项"
         case .RemoveDuplicates2: return "删除有序数组中的重复项2"
         case .MagorityElement: return "多数元素"
+        case .Rotate: return "轮转数组"
         }
     }
 }
