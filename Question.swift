@@ -16,6 +16,7 @@ enum Question: Identifiable, CaseIterable {
     case MagorityElement
     case Rotate
     case MaxProfit
+    case MaxProfit2
 }
 
 extension URL {
@@ -37,6 +38,7 @@ extension Question {
         case .MagorityElement: return "majority-element"
         case .Rotate: return "rotate-array"
         case .MaxProfit: return "best-time-to-buy-and-sell-stock"
+        case .MaxProfit2: return "best-time-to-buy-and-sell-stock-ii"
         }
     }
     var link: URL { .urlWithQuestion(question: self) }
@@ -52,6 +54,7 @@ extension Question {
         case .MagorityElement: return "多数元素"
         case .Rotate: return "轮转数组"
         case .MaxProfit: return "买卖股票的最佳时机"
+        case .MaxProfit2: return "买卖股票的最佳时机 II"
         }
     }
 }

@@ -16,7 +16,7 @@ class Max_Profit {
             if prices[index] < buy {
                 buy = prices[index]
             }
-            var tmpProfit = prices[index] - buy
+            let tmpProfit = prices[index] - buy
             profit = tmpProfit > profit ? tmpProfit : profit
         }
         return profit
