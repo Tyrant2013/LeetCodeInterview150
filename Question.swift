@@ -17,15 +17,7 @@ enum Question: Identifiable, CaseIterable {
     case Rotate
     case MaxProfit
     case MaxProfit2
-}
-
-extension URL {
-    static func urlWithQuestion(question: Question) -> URL {
-        let prefixScheme = "https://leetcode.cn/problems/"
-        let last = "/?envType=study-plan-v2&envId=top-interview-150"
-        let url = String(format: "%@%@%@", prefixScheme, question.name, last)
-        return URL(string: url)!
-    }
+    case JumpGame
 }
 
 extension Question {
@@ -39,6 +31,7 @@ extension Question {
         case .Rotate: return "rotate-array"
         case .MaxProfit: return "best-time-to-buy-and-sell-stock"
         case .MaxProfit2: return "best-time-to-buy-and-sell-stock-ii"
+        case .JumpGame: return "jump-game"
         }
     }
     var link: URL { .urlWithQuestion(question: self) }
@@ -55,6 +48,16 @@ extension Question {
         case .Rotate: return "轮转数组"
         case .MaxProfit: return "买卖股票的最佳时机"
         case .MaxProfit2: return "买卖股票的最佳时机 II"
+        case .JumpGame: return "跳跃游戏"
         }
+    }
+}
+
+extension URL {
+    static func urlWithQuestion(question: Question) -> URL {
+        let prefixScheme = "https://leetcode.cn/problems/"
+        let last = "/?envType=study-plan-v2&envId=top-interview-150"
+        let url = String(format: "%@%@%@", prefixScheme, question.name, last)
+        return URL(string: url)!
     }
 }
