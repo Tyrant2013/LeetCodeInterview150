@@ -18,6 +18,7 @@ enum Question: Identifiable, CaseIterable {
     case MaxProfit
     case MaxProfit2
     case JumpGame
+    case JumpGame2
 }
 
 extension Question {
@@ -32,6 +33,7 @@ extension Question {
         case .MaxProfit: return "best-time-to-buy-and-sell-stock"
         case .MaxProfit2: return "best-time-to-buy-and-sell-stock-ii"
         case .JumpGame: return "jump-game"
+        case .JumpGame2: return "jump-game-ii"
         }
     }
     var link: URL { .urlWithQuestion(question: self) }
@@ -49,6 +51,7 @@ extension Question {
         case .MaxProfit: return "买卖股票的最佳时机"
         case .MaxProfit2: return "买卖股票的最佳时机 II"
         case .JumpGame: return "跳跃游戏"
+        case .JumpGame2: return "跳跃游戏"
         }
     }
 }
