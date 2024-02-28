@@ -20,6 +20,7 @@ enum Question: Identifiable, CaseIterable {
     case JumpGame
     case JumpGame2
     case hIndex
+    case InsertDeleteGetRandom
 }
 
 extension Question {
@@ -36,6 +37,7 @@ extension Question {
         case .JumpGame: return "jump-game"
         case .JumpGame2: return "jump-game-ii"
         case .hIndex: return "h-index"
+        case .InsertDeleteGetRandom: return "insert-delete-getrandom-o1"
         }
     }
     var link: URL { .urlWithQuestion(question: self) }
@@ -55,6 +57,7 @@ extension Question {
         case .JumpGame: return "跳跃游戏"
         case .JumpGame2: return "跳跃游戏"
         case .hIndex: return "H 指数"
+        case .InsertDeleteGetRandom: return "O(1) 时间插入、删除和获取随机元素"
         }
     }
 }
