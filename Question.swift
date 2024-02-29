@@ -21,6 +21,7 @@ enum Question: Identifiable, CaseIterable {
     case JumpGame2
     case hIndex
     case InsertDeleteGetRandom
+    case ProductExceptSelf
 }
 
 extension Question {
@@ -38,6 +39,7 @@ extension Question {
         case .JumpGame2: return "jump-game-ii"
         case .hIndex: return "h-index"
         case .InsertDeleteGetRandom: return "insert-delete-getrandom-o1"
+        case .ProductExceptSelf: return "product-of-array-except-self"
         }
     }
     var link: URL { .urlWithQuestion(question: self) }
@@ -58,6 +60,7 @@ extension Question {
         case .JumpGame2: return "跳跃游戏"
         case .hIndex: return "H 指数"
         case .InsertDeleteGetRandom: return "O(1) 时间插入、删除和获取随机元素"
+        case .ProductExceptSelf: return "除自身以外数组的乘积"
         }
     }
 }
