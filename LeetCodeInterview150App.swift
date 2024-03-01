@@ -13,9 +13,8 @@ struct LeetCodeInterview150App: App {
         WindowGroup {
             ContentView()
                 .onAppear(perform: {
-                    let bb = ProductExceptSelf()
-                    let answers = bb.productExceptSelf([1, 2, 3, 4])
-                    print(answers.map({ "\($0)" }).joined(separator: ","))
+                    let checker = Gas_Station()
+                    checker.canCompleteCircuit([1, 2, 3, 4, 5], [3, 4, 5, 1, 2])
                 })
         }
     }
