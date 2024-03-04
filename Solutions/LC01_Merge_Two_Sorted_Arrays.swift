@@ -35,4 +35,16 @@ class Merge_Two_Sorted_Arrays_Solution {
             last -= 1
         }
     }
+    
+//    func testCases() {
+//        var nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3
+//        var result = [1,2,2,3,5,6]
+//        print("输入:")
+//        print("nums1: [" + nums1.map({ "\($0)" }).joined(separator: ",") + "], m: \(m)" + ", nums2: [" + nums2.map({ "\($0)" }).joined(separator: ",") + "], n: \(n)")
+//        merge(&nums1, m, nums2, n)
+//        print("输出: ")
+//        print(nums1.map({ "\($0)" }).joined(separator: ","))
+//        print("结果: ")
+//        print(result == nums1 ? "Success" : "Failed")
+//    }
 }

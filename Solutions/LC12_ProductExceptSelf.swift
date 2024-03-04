@@ -16,10 +16,8 @@ class ProductExceptSelf {
             l.append(nums[index - 1] * l[index - 1])
         }
         
-//        r[nums.count - 1] = 1
         for index in (0...(nums.count - 2)).reversed() {
             r[index] = nums[index + 1] * r[index + 1]
-            print("index: \(index) = " + r.map({ "\($0)" }).joined(separator: ","))
         }
         
         for index in 0..<nums.count {

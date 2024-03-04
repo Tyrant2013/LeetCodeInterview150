@@ -22,8 +22,8 @@ class Gas_Station {
             
             if j < index { return -1 }
             index = j
+            
             index += 1
-            print("Check: index: \(index)")
         }
         return -1
     }

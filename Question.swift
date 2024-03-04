@@ -23,6 +23,7 @@ enum Question: Identifiable, CaseIterable {
     case InsertDeleteGetRandom
     case ProductExceptSelf
     case GasStation
+    case Candy
 }
 
 extension Question {
@@ -42,6 +43,7 @@ extension Question {
         case .InsertDeleteGetRandom: return "insert-delete-getrandom-o1"
         case .ProductExceptSelf: return "product-of-array-except-self"
         case .GasStation: return "gas-station"
+        case .Candy: return "candy"
         }
     }
     var link: URL { .urlWithQuestion(question: self) }
@@ -64,6 +66,7 @@ extension Question {
         case .InsertDeleteGetRandom: return "O(1) 时间插入、删除和获取随机元素"
         case .ProductExceptSelf: return "除自身以外数组的乘积"
         case .GasStation: return "加油站"
+        case .Candy: return "分发糖果"
         }
     }
 }
