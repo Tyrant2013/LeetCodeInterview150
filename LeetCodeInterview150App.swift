@@ -13,8 +13,8 @@ struct LeetCodeInterview150App: App {
         WindowGroup {
             ContentView()
                 .onAppear(perform: {
-                    let checker = Merge_Two_Sorted_Arrays_Solution()
-                    checker.testCases()
+                    let checker = Trapping_Rain_Water_Solution()
+                    checker.testCase()
                 })
         }
     }

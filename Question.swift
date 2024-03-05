@@ -24,6 +24,7 @@ enum Question: Identifiable, CaseIterable {
     case ProductExceptSelf
     case GasStation
     case Candy
+    case TrappingRainWater
 }
 
 extension Question {
@@ -44,6 +45,7 @@ extension Question {
         case .ProductExceptSelf: return "product-of-array-except-self"
         case .GasStation: return "gas-station"
         case .Candy: return "candy"
+        case .TrappingRainWater: return "trapping-rain-water"
         }
     }
     var link: URL { .urlWithQuestion(question: self) }
@@ -67,6 +69,7 @@ extension Question {
         case .ProductExceptSelf: return "除自身以外数组的乘积"
         case .GasStation: return "加油站"
         case .Candy: return "分发糖果"
+        case .TrappingRainWater: return "接雨水"
         }
     }
 }
