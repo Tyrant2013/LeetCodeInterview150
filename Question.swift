@@ -26,6 +26,9 @@ enum Question: Identifiable, CaseIterable {
     case Candy
     case TrappingRainWater
     case RomanToInteger
+    case IntegerToRoman
+    case LengthOfLastWord
+    case LongestCommonPrefix
 }
 
 extension Question {
@@ -48,6 +51,9 @@ extension Question {
         case .Candy: return "candy"
         case .TrappingRainWater: return "trapping-rain-water"
         case .RomanToInteger: return "roman-to-integer"
+        case .IntegerToRoman: return "integer-to-roman"
+        case .LengthOfLastWord: return "length-of-last-word"
+        case .LongestCommonPrefix: return "longest-common-prefix"
         }
     }
     var link: URL { .urlWithQuestion(question: self) }
@@ -73,6 +79,9 @@ extension Question {
         case .Candy: return "分发糖果"
         case .TrappingRainWater: return "接雨水"
         case .RomanToInteger: return "罗马数字转整数"
+        case .IntegerToRoman: return "整数转罗马数字"
+        case .LengthOfLastWord: return "最后一个单词的长度"
+        case .LongestCommonPrefix: return "最长公共前缀"
         }
     }
 }
