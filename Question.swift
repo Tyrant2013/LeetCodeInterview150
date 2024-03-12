@@ -29,6 +29,7 @@ enum Question: Identifiable, CaseIterable {
     case IntegerToRoman
     case LengthOfLastWord
     case LongestCommonPrefix
+    case ReverseWordsInAString
 }
 
 extension Question {
@@ -54,6 +55,7 @@ extension Question {
         case .IntegerToRoman: return "integer-to-roman"
         case .LengthOfLastWord: return "length-of-last-word"
         case .LongestCommonPrefix: return "longest-common-prefix"
+        case .ReverseWordsInAString: return "reverse-words-in-a-string"
         }
     }
     var link: URL { .urlWithQuestion(question: self) }
@@ -82,6 +84,7 @@ extension Question {
         case .IntegerToRoman: return "整数转罗马数字"
         case .LengthOfLastWord: return "最后一个单词的长度"
         case .LongestCommonPrefix: return "最长公共前缀"
+        case .ReverseWordsInAString: return "反转字符串中的单词"
         }
     }
 }

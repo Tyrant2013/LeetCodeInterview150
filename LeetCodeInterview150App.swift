@@ -13,7 +13,7 @@ struct LeetCodeInterview150App: App {
         WindowGroup {
             ContentView()
                 .onAppear(perform: {
-                    let checker = Longest_Common_Prefix_Solution()
+                    let checker = Reverse_Words_In_A_String_Solution()
                     checker.testCases()
                 })
         }
