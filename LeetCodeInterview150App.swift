@@ -13,7 +13,7 @@ struct LeetCodeInterview150App: App {
         WindowGroup {
             ContentView()
                 .onAppear(perform: {
-                    let checker = Reverse_Words_In_A_String_Solution()
+                    let checker = Zigzag_Conversion_Solution()
                     checker.testCases()
                 })
         }
