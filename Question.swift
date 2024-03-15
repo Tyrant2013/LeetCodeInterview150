@@ -31,6 +31,7 @@ enum Question: Identifiable, CaseIterable {
     case LongestCommonPrefix
     case ReverseWordsInAString
     case ZigzagConversion
+    case TextJustification
 }
 
 extension Question {
@@ -58,6 +59,7 @@ extension Question {
         case .LongestCommonPrefix: return "longest-common-prefix"
         case .ReverseWordsInAString: return "reverse-words-in-a-string"
         case .ZigzagConversion: return "zigzag-conversion"
+        case .TextJustification: return "text-justification"
         }
     }
     var link: URL { .urlWithQuestion(question: self) }
@@ -88,6 +90,7 @@ extension Question {
         case .LongestCommonPrefix: return "最长公共前缀"
         case .ReverseWordsInAString: return "反转字符串中的单词"
         case .ZigzagConversion: return "Z 字形变换"
+        case .TextJustification: return "文本左右对齐"
         }
     }
 }

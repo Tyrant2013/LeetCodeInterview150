@@ -9,10 +9,10 @@ import Foundation
 
 class Zigzag_Conversion_Solution {
     /// 思路
-//    0             0+t                    0+2t                     0+3t
-//    1      t-1    1+t            0+2t-1  1+2t            0+3t-1   1+3t
-//    2  t-2        2+t  0+2t-2            2+2t  0+3t-2             2+3t
-//    3             3+t                    3+2t                     3+3t
+    //    0             0+t                    0+2t                     0+3t
+    //    1      t-1    1+t            0+2t-1  1+2t            0+3t-1   1+3t
+    //    2  t-2        2+t  0+2t-2            2+2t  0+3t-2             2+3t
+    //    3             3+t                    3+2t                     3+3t
     func convert(_ s: String, _ numRows: Int) -> String {
         guard numRows > 1 else { return s }
         
@@ -37,29 +37,29 @@ class Zigzag_Conversion_Solution {
     // 4、最后，将数组join，拼接下面所有的字符串
     // 5、以示例1为例。数组内 应该有三个字符串："PAHN" , "APLSIIG" , "YIR"
     func convert1(_ s: String, _ numRows: Int) -> String {
-            // 首先判断边界
-            if  numRows <= 1 || s.count <= numRows {
-                return s
-            }
-
-            // 创建一个数组来存放变换后，每一行字符串
-            var result = [String](repeating: "", count: numRows)
-            var goDown = false //是否要向下操作下一行字符串
-            var currentRow = 0 //当前操作的行数
-
-            for char in s {
-                result[currentRow].append(char)
-
-                if currentRow == 0 || currentRow == numRows-1 {
-                    goDown = !goDown //到头后折返
-                }
-
-                currentRow += (goDown ? 1 : -1)
-            }
-
-            return result.joined()
-
+        // 首先判断边界
+        if  numRows <= 1 || s.count <= numRows {
+            return s
         }
+        
+        // 创建一个数组来存放变换后，每一行字符串
+        var result = [String](repeating: "", count: numRows)
+        var goDown = false //是否要向下操作下一行字符串
+        var currentRow = 0 //当前操作的行数
+        
+        for char in s {
+            result[currentRow].append(char)
+            
+            if currentRow == 0 || currentRow == numRows - 1 {
+                goDown = !goDown //到头后折返
+            }
+            
+            currentRow += (goDown ? 1 : -1)
+        }
+        
+        return result.joined()
+        
+    }
     
     func testCases() {
         print(convert("PAYPALISHIRING", 3), "PAHNAPLSIIGYIR")
